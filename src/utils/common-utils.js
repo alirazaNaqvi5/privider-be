@@ -20,6 +20,11 @@ const sendErrorResp = (error, req, resp) => {
   }
 };
 
+
+const getCurrentDate = () => { return moment().format('YYYY-MM-DD'); }
+
+
 module.exports = {
   sendErrorResp,
+  getCurrentDate
 };
