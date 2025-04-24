@@ -21,6 +21,10 @@ const sendErrorResp = (error, req, resp) => {
 };
 
 
+// function to sum two numbers
+const sumTwoNumbers = (a, b) => a + b;
+
+
 const getCurrentDate = () => { return moment().format('YYYY-MM-DD'); }
 
 
