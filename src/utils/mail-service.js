@@ -127,6 +127,10 @@ const parseEmailsData = async (emailData) => {
   }
 };
 
+// create a function for sum of two values
+const sumTwoValues = (a, b) => a + b;
+
+
 module.exports = {
   parseEmailsData,
   sendEmail,
