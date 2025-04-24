@@ -28,6 +28,8 @@ const sumThreeNumbers = (a, b, c) => a + b + c;
 
 const getCurrentDate = () => { return moment().format('YYYY-MM-DD'); }
 
+// create a function to multiply 2 numbers
+const multiply = (a, b) => { return a * b; }
 
 module.exports = {
   sendErrorResp,
