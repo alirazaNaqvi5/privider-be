@@ -130,6 +130,8 @@ const parseEmailsData = async (emailData) => {
 // create a function for sum of two values
 const sumTwoValues = (a, b) => a + b;
 
+// create function for sum of 3 values
+const sumThreeValues = (a,b,c) => { return a + b + c;};
 
 module.exports = {
   parseEmailsData,
