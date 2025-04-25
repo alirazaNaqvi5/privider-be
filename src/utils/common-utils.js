@@ -21,11 +21,6 @@ const sendErrorResp = (error, req, resp) => {
 };
 
 
-// function to sum two numbers
-const sumTwoNumbers = (a, b) => a + b;
-
-const sumThreeNumbers = (a, b, c) => a + b + c;
-
 const getCurrentDate = () => { return moment().format('YYYY-MM-DD'); }
 
 // create a function to multiply 2 numbers
