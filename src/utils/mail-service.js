@@ -133,7 +133,24 @@ const sumTwoValues = (a, b) => a + b;
 // create function for sum of 3 values
 const sumThreeValues = (a,b,c) => { return a + b + c;};
 
+// Calculate monthly mortgage payment
+const calculateMortgage = (principal, interestRate, loanTerm) => {
+  // Convert interest rate to monthly rate
+  const monthlyInterestRate = interestRate / 100 / 12;
+
+  // Convert loan term to months
+  const loanTermMonths = loanTerm * 12;
+
+  // Calculate monthly payment using the formula
+  const monthlyPayment =
+    (principal * monthlyInterestRate) /
+    (1 - Math.pow(1 + monthlyInterestRate, -loanTermMonths));
+
+  return monthlyPayment;
+};
+
 module.exports = {
   parseEmailsData,
   sendEmail,
+  calculateMortgage,
 };
